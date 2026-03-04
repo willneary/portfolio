@@ -1,0 +1,70 @@
+:root {
+    --dark-green: #1a3a32;
+    --gold: #c5a059;
+    --text-main: #2d2d2d;
+    --bg-light: #f9f9f9;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-main);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Nav */
+.custom-nav { background: #fff; padding: 15px 0; border-bottom: 1px solid #eee; }
+.brand { font-weight: 800; font-size: 1.2rem; letter-spacing: 3px; text-decoration: none; color: var(--text-main); }
+.nav-link-simple { text-decoration: none; color: var(--text-main); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.btn-header { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 6px 18px; border-radius: 50px; }
+
+/* Mobile Menu */
+.compact-menu {
+    position: fixed; top: 80px; right: 25px; width: 250px;
+    background: white; z-index: 1050; border-radius: 12px;
+    transform: translateY(-10px); opacity: 0; pointer-events: none;
+    transition: 0.3s;
+}
+.compact-menu.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+.compact-nav a { display: block; padding: 12px 20px; text-decoration: none; color: var(--text-main); font-weight: 600; }
+
+/* Hero */
+.hero-section {
+    padding: 160px 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg.jpg');
+    background-size: cover; background-position: center; background-attachment: fixed;
+}
+.hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 5rem); }
+.accent-text { font-style: italic; color: var(--gold); }
+
+/* Work Section */
+.section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 4px; font-weight: 800; color: #aaa; }
+.section-divider { border-bottom: 1px solid #eee; margin-bottom: 40px; padding-bottom: 10px; }
+.category { font-size: 0.7rem; font-weight: 800; color: var(--gold); letter-spacing: 1px; }
+.read-link { font-weight: 700; color: var(--text-main); text-decoration: none; border-bottom: 2px solid var(--gold); font-size: 0.75rem; text-transform: uppercase; }
+
+/* Podcast */
+.podcast-hero {
+    background: linear-gradient(rgba(26, 58, 50, 0.9), rgba(26, 58, 50, 0.9)), url('images/podcast-bg.jpg');
+    background-size: cover;
+}
+.bg-dark-overlay { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+.podcast-main-title { font-weight: 800; font-size: clamp(2rem, 5vw, 4rem); }
+.text-gold { color: var(--gold) !important; }
+
+/* Footer Icons Hover */
+footer .bi:hover {
+    color: var(--gold);
+    transition: 0.3s ease;
+}
+
+/* Footer Disclosure Box */
+.ai-disclosure { border: 1px solid #ddd; background: #fff; }
+
+/* Accessibility Focus */
+a:focus, button:focus { outline: 3px solid var(--gold); outline-offset: 4px; }
+.hamburger { background: none; border: none; }
+
+/* Modals */
+.modal-xl { --bs-modal-width: 1200px; }
+.serif-font { font-family: 'Playfair Display', serif; }

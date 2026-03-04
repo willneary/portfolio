@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Journalism Portfolio of Will Neary, Northwestern Medill Graduate Student.">
+    <title>Will Neary | Journalism Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="custom-nav sticky-top" aria-label="Main Navigation">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="brand" href="#">WILL NEARY</a>
+
+                <div class="d-flex align-items-center gap-2 gap-md-3">
+                    <div class="d-none d-md-flex gap-3 me-3">
+                        <a href="#about" class="nav-link-simple">About</a>
+                        <a href="#writing" class="nav-link-simple">Work</a>
+                        <a href="#projects" class="nav-link-simple">Projects</a>
+                        <a href="#contact" class="nav-link-simple">Contact</a>
+                    </div>
+                    <button class="btn btn-outline-dark btn-header" data-bs-toggle="modal"
+                        data-bs-target="#resumeModal">Resume</button>
+                    <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+                        <i class="bi bi-list fs-2" id="toggleIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="compact-menu shadow" id="menuOverlay">
+            <nav class="compact-nav">
+                <a href="#about" class="menu-link">About</a>
+                <a href="#writing" class="menu-link">Selected Work</a>
+                <a href="#projects" class="menu-link">Data & Projects</a>
+                <a href="#podcast" class="menu-link">Podcast</a>
+                <a href="#contact" class="menu-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section text-center text-white">
+            <div class="container">
+                <h1 class="hero-headline">Reporting on the <br><span class="accent-text">Future of the Game.</span></h1>
+                <p class="hero-sub text-uppercase ls-3">Northwestern Medill Graduate Student</p>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <figure class="m-0">
+                            <img src="IMG_0133.jpg" alt="Headshot of Will Neary" class="img-fluid rounded shadow">
+                        </figure>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="section-label mb-3">About Me</h2>
+                        <h3 class="display-5 fw-bold mb-4 h2">Journalist covering sports, beat culture, and data.</h3>
+                        <p class="lead">I am a graduate student at Medill specializing in sports journalism. My work
+                            explores the technical evolution of professional sports and the human stories behind the
+                            statistics.</p>
+                        <p><strong>Beats:</strong> PGA Tour, Sports Architecture, Data Analytics.</p>
+                        <button class="btn btn-dark rounded-pill px-4 mt-3" data-bs-toggle="modal"
+                            data-bs-target="#bioModal">Read Full Bio</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="writing" class="py-5">
+            <div class="container py-5">
+                <div class="section-divider">
+                    <h2 class="section-label">Selected Work</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm work-card">
+                            <div class="card-body">
+                                <span class="category">PGA TOUR | JAN 2026</span>
+                                <h3 class="h5 fw-bold mt-2">The Architectural Evolution of the Modern Major</h3>
+                                <p class="card-text small">An in-depth look at how professional course design is
+                                    reacting to technical gains.</p>
+                                <p class="small text-muted mb-2"><strong>Role:</strong> Lead Reporter</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark">Longform</span>
+                                    <span class="badge bg-light text-dark">Architecture</span>
+                                </div>
+                                <a href="#" class="read-link" data-bs-toggle="modal" data-bs-target="#featureModal">View
+                                    Project</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm work-card">
+                            <div class="card-body">
+                                <span class="category">CENTER CUP | DEC 2025</span>
+                                <h3 class="h5 fw-bold mt-2">A Conversation with the Field</h3>
+                                <p class="card-text small">A transcript-style deep dive into player psychology and
+                                    18th-green pressure.</p>
+                                <p class="small text-muted mb-2"><strong>Role:</strong> Interviewer</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark">Q&A</span>
+                                    <span class="badge bg-light text-dark">Psychology</span>
+                                </div>
+                                <a href="#" class="read-link" data-bs-toggle="modal"
+                                    data-bs-target="#interviewModal">View Project</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm work-card">
+                            <div class="card-body">
+                                <span class="category">MEDILL REPORTS | NOV 2025</span>
+                                <h3 class="h5 fw-bold mt-2">Technology and Equity: A Growing Divide?</h3>
+                                <p class="card-text small">Reporting on how equipment innovation impacts accessibility
+                                    in pro sports.</p>
+                                <p class="small text-muted mb-2"><strong>Role:</strong> Data Reporter</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark">Tech</span>
+                                    <span class="badge bg-light text-dark">Equity</span>
+                                </div>
+                                <a href="#" class="read-link">Read External</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="section-divider">
+                    <h2 class="section-label">Data & Interactive</h2>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <h3 class="h4 fw-bold">Mapping Professional Play</h3>
+                            <p>Reserved for data visualization embeds (Tableau/Flourish). Demonstrates ability to
+                                translate sports data into visual narratives.</p>
+                            <a href="https://github.com/wneary" class="btn btn-outline-dark btn-sm">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="m-0">
+                            <img src="images/data-vis.jpg" alt="Data visualization example charts"
+                                class="img-fluid rounded shadow-sm">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="podcast" class="podcast-hero py-5">
+            <div class="container py-5 text-white">
+                <div class="bg-dark-overlay p-4 p-md-5 rounded shadow-lg">
+                    <h2 class="section-label text-gold">Audio</h2>
+                    <h3 class="podcast-main-title">CENTER CUP</h3>
+                    <p class="lead italic mb-4">Deep analysis of the professional game.</p>
+                    <div class="d-flex align-items-center gap-4 mb-4">
+                        <a href="#" class="spotify-link" aria-label="Spotify"><i class="bi bi-spotify fs-1"></i></a>
+                        <a href="#" class="social-link" aria-label="X"><i class="bi bi-twitter-x fs-2"></i></a>
+                    </div>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/4rOo9vS9vU96fX259X6G0D"
+                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-light border-top py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="section-label mb-3">Contact</h2>
+                    <div class="d-flex gap-4 justify-content-center justify-content-md-start">
+                        <a href="mailto:williamneary2026@u.northwestern.edu" class="text-dark fs-2"
+                            aria-label="Email Will Neary">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/WNearyCC" target="_blank" class="text-dark fs-2"
+                            aria-label="X Profile">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" class="text-dark fs-2" aria-label="LinkedIn Profile">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-1">© 2026 Will Neary • Medill School of Journalism</p>
+                    <p class="small text-muted mb-3 italic">Last updated: January 2026</p>
+                    <div class="ai-disclosure p-3 bg-white rounded border d-inline-block text-start"
+                        style="max-width: 400px;">
+                        <p class="small text-muted m-0">
+                            <strong>AI Disclosure:</strong> Built by me using Gemini 3 Flash for layout, CSS
+                            refactoring, and accessibility drafts. All content reviewed and verified by me.
+                        </p>
+                        <p class="small mt-2 mb-0"><a href="ai.doc" class="text-gold fw-bold text-decoration-none">View
+                                AI Log (ai.doc)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="bioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body px-md-5 pb-5">
+                    <h2 class="serif-font fw-bold mb-4">About Will Neary</h2>
+                    <p class="lead">Graduate student at Northwestern Medill.</p>
+                    <p>Will covers the intersection of athletic performance and architectural strategy in pro sports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body px-md-5 pb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+                        <h2 class="serif-font fw-bold m-0 h1">Resume</h2>
+                        <a href="#" class="btn btn-dark rounded-pill px-4">Download PDF</a>
+                    </div>
+                    <h4 class="fw-bold text-uppercase ls-2 small mb-3 text-gold">Skills</h4>
+                    <p>Adobe Creative Suite, Python, SQL, Audio Production.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="featureModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body px-md-5 pb-5">
+                    <h2 class="serif-font display-5 fw-bold mb-3">Architectural Evolution of the Modern Major</h2>
+                    <p class="lead fw-bold">January 2026</p>
+                    <hr>
+                    <p>Full article text goes here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="interviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body px-md-5 pb-5">
+                    <h2 class="serif-font display-5 fw-bold mb-3">Conversation with the Field</h2>
+                    <hr>
+                    <p><strong>WN:</strong> Question goes here.</p>
+                    <p><strong>Player:</strong> Answer goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
